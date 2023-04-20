@@ -1,0 +1,375 @@
+* {
+  font-family: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fae1f5;
+}
+/* Estilos para el header */
+.header {
+  background-color: #fae1f5; /* Cambia el color de fondo a tu preferencia */
+  color: #0b0a0a; /* Cambia el color de texto a tu preferencia */
+  padding: 10px; /* Ajusta el padding según tus necesidades */
+  text-align: center; /* Centra el contenido del header */
+  font-family: sans-serif; /* Cambia "TuFuenteEstetica" por el nombre de la fuente que deseas utilizar */
+}
+
+.header__content {
+  display: flex; /* Cambia el display a flex para alinear los elementos horizontalmente */
+  justify-content: space-between; /* Alinea los elementos a los extremos */
+  align-items: center; /* Alinea verticalmente los elementos al centro */
+}
+
+.header__title {
+  font-size: 20px; /* Ajusta el tamaño de fuente según tus necesidades */
+  margin: 0; /* Elimina el margen por defecto del título */
+  position: absolute; /* Posición absoluta para centrar el título */
+  top: 10%; /* Centra verticalmente el título */
+  left: 50%; /* Centra horizontalmente el título */
+  transform: translate(-50%,-50%); /* Centra el título correctamente */
+}
+
+.header__logo {
+  width: 90px; /* Ajusta el ancho del logo según tus necesidades */
+  height: 90px; /* Ajusta el alto del logo según tus necesidades */
+  margin-right: 5px; /* Ajusta el margen derecho del logo según tus necesidades */
+}
+
+.menu {
+  margin-top: 5px; /* Ajusta el margen superior según tus necesidades */
+}
+
+.menu__list {
+  list-style: none; /* Elimina los estilos de lista por defecto */
+  padding: 0; /* Elimina el padding por defecto de la lista */
+  display: flex; /* Cambia el display a flex para alinear los elementos horizontalmente */
+}
+
+.menu__item {
+  margin-right: 25px; /* Ajusta el margen derecho entre los elementos de menú según tus necesidades */
+}
+
+.menu__link {
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  color: #000000; /* Cambia el color de texto del enlace a tu preferencia */
+  transition: color 0.3s ease; /* Agrega una transición suave para el cambio de color */
+  text-decoration: none;
+  display: inline-block; /* Cambia a inline-block para que los enlaces se muestren como botones */
+  padding: 10px 15px; /* Agrega padding para darle espacio y forma de botón */
+  border-radius: 5px; /* Agrega bordes redondeados para darle forma de botón */
+}
+
+.menu__link:hover {
+  color: #ffffff; /* Cambia el color de texto del enlace al pasar el cursor por encima */
+  background-color: #fe29da;
+}
+
+
+
+
+
+/* Estilos para las tarjetas */
+.card {
+  background-color: #f3b7e7;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(23, 23, 23, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  max-width: 300px; /* Ajusta el ancho máximo de la tarjeta según tus necesidades */
+}
+
+/* Estilos para el título de la tarjeta */
+.card__title {
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 10px; /* Agrega un margen inferior para separar del contenido siguiente */
+}
+
+/* Estilos para la información de la tarjeta */
+.card__info {
+  font-size: 12px;
+  margin-bottom: 10px; /* Agrega un margen inferior para separar del contenido siguiente */
+}
+
+/* Estilos para el precio de la tarjeta */
+.card__price {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px; /* Agrega un margen inferior para separar del contenido siguiente */
+}
+
+/* Estilos para el enlace de solicitud de turno en la tarjeta */
+.card__link {
+  display: inline-block;
+  background-color: #fc9dff;
+  color: #000000;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.card__link:hover {
+  background-color: #fe29da;
+  color: white;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center; /* Alineación horizontal centrada */
+}
+
+.card {
+  flex-basis: calc(33.33% - 20px);
+  margin: 10px;
+  transition: transform 0.3s ease; /* Agrega una transición suave de 0.3 segundos en la transformación */
+}
+
+/* Define la transformación que se aplicará cuando se pase el cursor sobre la tarjeta */
+.card:hover {
+  transform: translateY(-7px); /* Mueve la tarjeta hacia arriba 5px en el eje Y */
+}
+
+.prices__list {
+  list-style-type: none; /* Eliminar los puntos de la lista */
+  padding: 0; /* Eliminar el padding por defecto de la lista */
+  display: flex; /* Convertir la lista en un flex container */
+  justify-content: center; /* Centrar horizontalmente los elementos de la lista */
+}
+
+.prices__item {
+  margin-right: 10px; /* Añadir un margen entre los elementos de la lista */
+}
+
+
+.card__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+/* Estilos para la imagen de la tarjeta con bordes redondeados */
+.card__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 15px; /* Aplica un borde redondeado de 10px */
+}
+
+
+
+
+
+
+
+
+
+/* Estilos para el footer */
+.footer {
+  background-color: #f3b7e7;
+  padding: 7px;
+  text-align: center;
+  font-size: 14px;
+  color: #000000;
+}
+
+.footer__text {
+  margin: 0;
+}
+
+.footer__link {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+  color: #fe29da;
+}
+
+
+
+/* Estilos para el section de turnos */
+#turnos.appointments {
+  background-color: #fae1f5;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Estilos para el título del section de turnos */
+.appointments__title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* Estilos para la información del section de turnos */
+.appointments__info {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el botón de solicitud de turno del section de turnos */
+.appointments__button {
+  display: inline-block;
+  background-color: #fc9dff;
+  color: #000000;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.appointments__button:hover {
+  background-color: #fe29da;
+  color: #fff;
+}
+
+
+
+/* Estilos para la sección de consejos */
+.tips-section {
+  background-color: #fae1f5;
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.tips-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Estilos para las tarjetas de consejos */
+.tip-card {
+  width: 300px;
+  padding: 20px;
+  background-color: #f7cff1;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.tip-card:hover {
+  transform: translateY(-8px);
+}
+
+.tip-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.tip-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tip-content {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+/* Estilos para el scrollbar */
+::-webkit-scrollbar {
+  width: 10px; /* Ancho del scrollbar */
+  background-color: #fae1f5; /* Color de fondo del scrollbar */
+}
+
+/* Estilos para el pulgar del scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: #fc9dff; /* Color del pulgar del scrollbar */
+  border-radius: 5px; /* Borde redondeado del pulgar del scrollbar */
+}
+
+/* Estilos para el pulgar del scrollbar en estado de hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #fe29da; /* Color del pulgar del scrollbar en estado de hover */
+}
+
+/* Estilos para el botón del scrollbar */
+::-webkit-scrollbar-button {
+  display: none; /* Ocultar el botón del scrollbar */
+}
+
+/* Estilos para la pista del scrollbar */
+::-webkit-scrollbar-track {
+  background-color: #fae1f5; /* Color de fondo de la pista del scrollbar */
+}
+
+
+
+
+
+
+
+/* Estilos para el contenedor del botón flotante */
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  background-color: #fc9dff; /* Color de fondo del botón */
+  border-radius: 5px; /* Borde redondeado del botón */
+  padding: 6px; /* Espaciado interno del botón */
+  transform: translateY(0); /* Inicialmente sin transformación */
+  transition: transform 0.3s ease-in-out; /* Transición suave */
+}
+
+/* Estilos para la imagen del botón */
+.floating-button img {
+  width: 18px; /* Tamaño de la imagen del logo de Instagram */
+  height: 18px;
+  vertical-align: middle; /* Alinear verticalmente en el contenedor */
+}
+
+/* Estilos para el texto del botón */
+.floating-button .button-text {
+  display: inline-block;
+  margin-left: 1px; /* Espaciado entre la imagen y el texto */
+  font-size: 14px; /* Tamaño de fuente del texto */
+  font-family: sans-serif;
+  color: #000000; /* Color de fuente del texto */
+  vertical-align: middle; /* Alinear verticalmente en el contenedor */
+}
+
+/* Estilos para la animación */
+.floating-button:hover {
+  transform: translateY(-5px); /* Desplazamiento hacia arriba en hover */
+}
+
+
+
+
+
+
